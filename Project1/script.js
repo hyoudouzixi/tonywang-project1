@@ -48,12 +48,14 @@ for ( var i=0; i < horizontalRec.length; i++ ) {
   randomTop = getRandomNumber(80, winHeight);
   randomLeft = getRandomNumber(100, 200);
   randomRight = getRandomNumber(100, 200);
+  randomWidth = getRandomNumber(100, 400)
   random = getRandomNumber(0,0.2);
   
   // update top and right position
   thisHorizontalRec.style.top = randomTop +"px";
   thisHorizontalRec.style.left = randomLeft +"px";
   thisHorizontalRec.style.right = randomRight +"px";
+  thisHorizontalRec.style.width = randomWidth + "px";
 
   thisHorizontalRec.style.animation = "flash " + random + "s" + " infinite";
   
